@@ -1,0 +1,4 @@
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.Expression2Sql\bin\Debug\FJW.Expression2Sql.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.Expression2Sql\bin\Debug\FJW.Expression2Sql.pdb
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.Expression2Sql\obj\Debug\FJW.Expression2Sql.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.Expression2Sql\obj\Debug\FJW.Expression2Sql.pdb

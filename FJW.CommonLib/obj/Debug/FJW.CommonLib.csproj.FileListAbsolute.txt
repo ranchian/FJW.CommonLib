@@ -1,0 +1,14 @@
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\FJW.CommonLib.dll.config
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\FJW.CommonLib.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\FJW.CommonLib.pdb
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\Autofac.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\Newtonsoft.Json.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\ServiceStack.Common.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\ServiceStack.Interfaces.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\ServiceStack.Redis.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\ServiceStack.Text.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\zxing.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\zxing.presentation.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\bin\Debug\Autofac.xml
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\obj\Debug\FJW.CommonLib.dll
+D:\FJW开发\DevelopDept\trunk\Architect\FJW.CommonLib\obj\Debug\FJW.CommonLib.pdb

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BC5487B-F6F5-4BBC-BC59-C2622E4EAA14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FJW</RootNamespace>
+    <AssemblyName>FJW.CommonLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Business\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\Lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\Lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\..\Lib\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\Lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>..\..\Lib\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\..\Lib\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonLib\Cache\CacheItem.cs" />
+    <Compile Include="CommonLib\Cache\CacheManager.cs" />
+    <Compile Include="CommonLib\Cache\ICache.cs" />
+    <Compile Include="CommonLib\Configuration\ConfigManager.cs" />
+    <Compile Include="CommonLib\Entity\BasePageResponse.cs" />
+    <Compile Include="CommonLib\Entity\BaseParameter.cs" />
+    <Compile Include="CommonLib\Entity\BaseResponse.cs" />
+    <Compile Include="CommonLib\Entity\MailEntity.cs" />
+    <Compile Include="CommonLib\Entity\SMSEntity.cs" />
+    <Compile Include="CommonLib\ExtensionMethod\DateTimeExtensionMethods.cs" />
+    <Compile Include="CommonLib\ExtensionMethod\EnumExtensionMethods.cs" />
+    <Compile Include="CommonLib\ExtensionMethod\ObjectExtensionMethods.cs" />
+    <Compile Include="CommonLib\ExtensionMethod\OrderOptions.cs" />
+    <Compile Include="CommonLib\ExtensionMethod\OtherExtensionMethods.cs" />
+    <Compile Include="CommonLib\ExtensionMethod\StringExtensionMethods.cs" />
+    <Compile Include="CommonLib\IOC\IOCKernel.cs" />
+    <Compile Include="CommonLib\IO\FileDateSorter.cs" />
+    <Compile Include="CommonLib\Mail\Enum\EmailAddrType.cs" />
+    <Compile Include="CommonLib\Mail\Enum\EmailType.cs" />
+    <Compile Include="CommonLib\Mail\Enum\MailInfoType.cs" />
+    <Compile Include="CommonLib\Mail\Helper\MailValidatorHelper.cs" />
+    <Compile Include="CommonLib\Mail\MailHelper.cs" />
+    <Compile Include="CommonLib\Mail\MailManager.cs" />
+    <Compile Include="CommonLib\Mail\SmtpHelper.cs" />
+    <Compile Include="CommonLib\RDBS\SQLHelper.cs" />
+    <Compile Include="CommonLib\Redis\RedisConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonLib\Redis\RedisHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonLib\Redis\RedisLock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonLib\Utils\CommonUtils.cs" />
+    <Compile Include="CommonLib\Utils\ConvertHelper.cs" />
+    <Compile Include="CommonLib\Utils\DictionaryHelper.cs" />
+    <Compile Include="CommonLib\Encrypt\AESEncodeHelper.cs" />
+    <Compile Include="CommonLib\Encrypt\EncryptV1.cs" />
+    <Compile Include="CommonLib\Encrypt\IEncryptManager.cs" />
+    <Compile Include="CommonLib\Qr\QrHelper.cs" />
+    <Compile Include="CommonLib\Security\EncodeHelper.cs" />
+    <Compile Include="CommonLib\Utils\DateTimeHelper.cs" />
+    <Compile Include="CommonLib\Utils\IdFactory.cs" />
+    <Compile Include="CommonLib\Utils\IdWorker.cs" />
+    <Compile Include="CommonLib\Utils\ImageHelper.cs" />
+    <Compile Include="CommonLib\Utils\IPScanerHelper.cs" />
+    <Compile Include="CommonLib\Utils\JsonHelper.cs" />
+    <Compile Include="CommonLib\Utils\Logger.cs" />
+    <Compile Include="CommonLib\IO\PathHelper.cs" />
+    <Compile Include="CommonLib\Utils\NetHelper.cs" />
+    <Compile Include="CommonLib\Utils\RandomHelper.cs" />
+    <Compile Include="CommonLib\Utils\RMBCapitalization.cs" />
+    <Compile Include="CommonLib\Utils\Singleton.cs" />
+    <Compile Include="CommonLib\Utils\ThreadBox.cs" />
+    <Compile Include="CommonLib\Utils\TimeFormat.cs" />
+    <Compile Include="CommonLib\Utils\VCodeHelper.cs" />
+    <Compile Include="CommonLib\Utils\WebHelper.cs" />
+    <Compile Include="CommonLib\Validation\DetectionRuleHelper.cs" />
+    <Compile Include="CommonLib\Validation\DynamicCalls.cs" />
+    <Compile Include="CommonLib\Validation\PostEntityAtrribute.cs" />
+    <Compile Include="CommonLib\Validation\PropertyMap.cs" />
+    <Compile Include="CommonLib\Validation\ValidateBase.cs" />
+    <Compile Include="CommonLib\Validation\ValidateHelper.cs" />
+    <Compile Include="CommonLib\Validation\ValidateHelperNew.cs" />
+    <Compile Include="CommonLib\XHttp\XFtpHelper.cs" />
+    <Compile Include="CommonLib\XHttp\XHttpHandler.cs" />
+    <Compile Include="CommonLib\XHttp\XHttpHelper.cs" />
+    <Compile Include="CommonLib\XService\ServiceConfig.cs" />
+    <Compile Include="CommonLib\XService\ServiceEngine.cs" />
+    <Compile Include="CommonLib\XService\ServiceInfo.cs" />
+    <Compile Include="DI\Autofac\Attributes\ComponentAttribute.cs" />
+    <Compile Include="DI\Autofac\AutofacObjectContainer.cs" />
+    <Compile Include="DI\Autofac\ComponentLifeStyle.cs" />
+    <Compile Include="DI\Autofac\ConfigurationSettingsReader.cs" />
+    <Compile Include="DI\Autofac\IObjectContainer.cs" />
+    <Compile Include="DI\Autofac\ObjectContainer.cs" />
+    <Compile Include="DI\Configurations\Configuration.cs" />
+    <Compile Include="DI\Configurations\ConfigurationExtensions.cs" />
+    <Compile Include="DI\ServerLocator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
